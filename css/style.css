@@ -1,0 +1,46 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #ffffff;
+  --accent-color: #2196f3;
+}
+/* Тело кода */
+body {
+}
+/* Убирает все маркировки с списков */
+ul {
+  list-style: none;
+}
+/* При наведение указателя светится 
+ голубым цветом */
+.logo:hover {
+  color: var(--accent-color);
+}
+/* Списки с ссылками в шапке черного цвета */
+.site-nav .link {
+  color: #212121;
+}
+/* добавляет при наведении голубой цвет,
+ а так же выбирает блоками через таб */
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+/* в основном блоке добавляет заглавлению белый цвет, 
+а так же добавлен
+черный фон к надписи для читабельности */
+.main .main-title {
+  color: var(--title-text-color);
+  background-color: #212121;
+}
+/* Всем оглавлениям в 
+блоках добавлен черный цвет шрифта */
+.section .section-title {
+  color: #212121;
+}
+/* Всем оглавлениям в 
+блоках добавлен черный цвет шрифта */
+.features .title {
+  color: #212121;
+}
+.features .link {
+}
