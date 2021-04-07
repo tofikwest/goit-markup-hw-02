@@ -1,61 +1,165 @@
 :root {
+  --navigation-text-color: #212121;
+  --contact-us-font: #757575;
   --primary-text-color: #212121;
-  --title-text-color: #ffffff;
+  --main-title-text-color: #ffffff;
   --accent-color: #2196f3;
 }
-/* Тело кода */
-body {
+.all-of-them {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
-/* Убирает все маркировки с списков */
-ul {
+
+.list {
   list-style: none;
 }
+/* __________________________________________________ */
+/* Шапка */
 .logo {
   text-decoration: none;
+  color: var(--navigation-text-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
 }
 .part-logo {
-  background-color: var(--accent-color);
-}
-.contact-us .email {
-  color: #757575;
-  text-decoration: none;
-}
-.contact-us .number {
-  color: #757575;
-  text-decoration: none;
-}
-/* При наведение указателя светится 
- голубым цветом */
-.logo:hover {
   color: var(--accent-color);
 }
-/* Списки с ссылками в шапке черного цвета */
-.site-nav .link {
-  color: #212121;
+.contact-us .email {
+  color: var(--contact-us-font);
   text-decoration: none;
 }
-/* добавляет при наведении голубой цвет,
- а так же выбирает блоками через таб */
+.contact-us .email:hover {
+  color: var(--accent-color);
+}
+.contact-us .email:focus {
+  color: var(--accent-color);
+}
+.contact-us .number {
+  color: var(--contact-us-font);
+  text-decoration: none;
+}
+.site-nav .link {
+  color: var(--navigation-text-color);
+  text-decoration: none;
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-/* в основном блоке добавляет заглавлению белый цвет, 
-а так же добавлен
-черный фон к надписи для читабельности */
+/* ____________________________________________________________ */
+/* Основной блок */
 .main .main-title {
-  color: var(--title-text-color);
-  background-color: #212121;
+  background-color: #2F303A;
+  color: var(--main-title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
-/* Всем оглавлениям в 
-блоках добавлен черный цвет шрифта */
-.section .section-title {
+.main .main-button {
+  background: #2196F3;
+  color: var(--main-title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  margin-left: 880px;
+}
+/* _____________________________________________________________________________ */
+/* Преимущества */
+.preference .title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.preference .table-of-contents {
+  color: #757575;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+/* _______________________________________________________________________ */
+/* Чем мы занимаемся */
+.projects .all-title {
+  font-size: 36px;
   color: #212121;
+  text-align: center;
 }
-/* Всем оглавлениям в 
-блоках добавлен черный цвет шрифта */
-.features .title {
+.projects .photo-box {
+  padding-bottom: 30px;
+}
+/* __________________________________________________________________________ */
+/* Команда */
+.team {
+  background-color: #F5F4FA;
+}
+.team .photo-box {
+  padding-bottom: 30px;
+}
+.team .all-title {
+  padding-top: 94px;
+  font-size: 36px;
   color: #212121;
+  text-align: center;
 }
-.features .link {
+.team .table {
+  color: #757575;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+.team .worker-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+/* ________________________________________________________________________
+Подвал */
+.down-part {
+  background: #2F303A;
+}
+.down-part .logo-position {
+  margin-left: 215px;
+}
+.down-part .our-address {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-left: 215px;
+}
+.down-part .our-contact,
+ .email, .number {
+  color: var(--contact-us-font);
+  text-decoration: none;
+}
+.down-part .email{
+  margin-left: 170px;
+}
+.down-part .number {
+  margin-left: 170px;
 }
