@@ -5,7 +5,7 @@
   --main-title-text-color: #ffffff;
   --accent-color: #2196f3;
 }
-.all-of-them {
+.all-of-thembody {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -56,7 +56,7 @@
 /* ____________________________________________________________ */
 /* Основной блок */
 .main .main-title {
-  background-color: #2F303A;
+  background-color: #2f303a;
   color: var(--main-title-text-color);
   font-family: Roboto;
   font-style: normal;
@@ -68,14 +68,14 @@
   text-transform: uppercase;
 }
 .main .main-button {
-  background: #2196F3;
+  background: var(--accent-color);
   color: var(--main-title-text-color);
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  margin-left: 880px;
+  margin-left: 650px;
 }
 /* _____________________________________________________________________________ */
 /* Преимущества */
@@ -109,7 +109,7 @@
 /* __________________________________________________________________________ */
 /* Команда */
 .team {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 .team .photo-box {
   padding-bottom: 30px;
@@ -138,10 +138,13 @@
 /* ________________________________________________________________________
 Подвал */
 .down-part {
-  background: #2F303A;
+  background: #2f303a;
 }
 .down-part .logo-position {
   margin-left: 215px;
+}
+.down-part .logo {
+  color: #f5f4fa;
 }
 .down-part .our-address {
   font-family: Roboto;
@@ -149,17 +152,17 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-left: 215px;
 }
-.down-part .our-contact,
- .email, .number {
+.down-part .email-footer {
   color: var(--contact-us-font);
   text-decoration: none;
+  margin-left: 175px;
+  line-height: 29px;
 }
-.down-part .email{
-  margin-left: 170px;
-}
-.down-part .number {
-  margin-left: 170px;
+.down-part .number-footer {
+  color: var(--contact-us-font);
+  text-decoration: none;
+  margin-left: 175px;
 }
