@@ -1,2 +1,2 @@
 # goit-markup-hw-02
-Homework
+https://tofikwest.github.io/goit-markup-hw-02/
