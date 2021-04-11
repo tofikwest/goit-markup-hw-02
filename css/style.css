@@ -15,6 +15,7 @@
   --footer-our-address-color: #ffffff;
   --buttons-text-color: #212121;
   --portfolio-table-color: #757575;
+  --portfolio-button-active: #FFFFFF;
 }
 body {
   color: var(--primary-text-color);
@@ -46,6 +47,7 @@ body {
   line-height: 1.14em;
   letter-spacing: 0.02em;
 }
+
 .contact-us .email {
   color: var(--contact-us-font);
   text-decoration: none;
@@ -80,6 +82,13 @@ body {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+.site-nav .studio.current {
+  color: var(--accent-color);
+}
+.site-nav .portfolio.current {
+  color: var(--accent-color);
+}
+
 /* ____________________________________________________________ */
 /* Основной блок */
 .main .main-title {
@@ -210,11 +219,17 @@ body {
   letter-spacing: 0.03em;
   cursor: pointer;
 }
-.buttons :hover,
+.buttons .button-all:hover,
+.buttons .button-sites:hover,
+.buttons .button-apps:hover,
+.buttons .button-disagn:hover,
+.buttons .button-marketing:hover,
 .buttons :focus {
-  color: var(--accent-color);
+  color: var(--portfolio-button-active);
+  background-color: var(--accent-color);
   cursor: pointer;
 }
+
 .portfolio-names {
   color: var(--all-titles-color);
   font-weight: bold;
